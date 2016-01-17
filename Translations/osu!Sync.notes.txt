@@ -1,0 +1,8 @@
+configuation file = 設定檔
+beatmap = 譜面,圖譜 (.osu)
+beatmap set = 圖組 (一首歌的一個set)
+API = API
+log = 日誌(檔)
+spamming = 濫用、濫- (?)
+restart to elevated mode = 以系統管理員權限重啟
+update patcher = 更新補丁工具
