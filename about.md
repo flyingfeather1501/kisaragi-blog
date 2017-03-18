@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 如月飛羽 | About
+title: About | 關於
 permalink: /about/
 ---
 
