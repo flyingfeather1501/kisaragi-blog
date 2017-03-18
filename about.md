@@ -1,15 +1,19 @@
 ---
 layout: page
-title: About
+title: 如月飛羽 | About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+之後再來寫，先放連結。
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
+Youtube: [如月.飛羽](https://www.youtube.com/channel/UCl_hsqcvdX0XdgBimRQ6R3A)
+niconico: [如月.飛羽](http://www.nicovideo.jp/user/38995186)
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+Twitter: [@flyin1501](https://twitter.com/flyin1501)
+Reddit: [/u/flyin1501](https://www.reddit.com/user/flyin1501)
+Episode.cc: https://episode.cc/about/flyin1501
+Blogger: https://flyin1501.blogspot.com
+
+Pixiv: https://pixiv.me/flyingfeather1501
+
+Github: https://github.com/flyingfeather1501
