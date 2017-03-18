@@ -24,6 +24,7 @@ github_username: flyingfeather1501
 niconico_userid: 38995186
 
 # Build settings
+encoding: UTF-8
 markdown: kramdown
 theme: minima
 gems:
