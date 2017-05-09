@@ -10,6 +10,7 @@ niconico: [如月.飛羽](http://www.nicovideo.jp/user/38995186)
 Twitter: [@flyin1501](https://twitter.com/flyin1501)  
 Mastodon: [@flyingfeather1501@pawoo.net](https://pawoo.net/@flyingfeather1501)  
 Reddit: [/u/flyin1501](https://www.reddit.com/user/flyin1501)  
+Steemit.com: [kisaragi-hiu](https://steemit.com/@kisaragi-hiu)  
 Osu!: [kisaragi\_hiu](https://osu.ppy.sh/u/3996811)  
 
 Episode.cc: <https://episode.cc/about/flyin1501>  
