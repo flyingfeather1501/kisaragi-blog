@@ -7,6 +7,8 @@ permalink: /links/
 Youtube: [如月.飛羽](https://www.youtube.com/channel/UCl_hsqcvdX0XdgBimRQ6R3A)  
 niconico: [如月.飛羽](http://www.nicovideo.jp/user/38995186)  
 
+SoundCloud: [flyin1501](https://soundcloud.com/flyin1501)
+
 Twitter: [@flyin1501](https://twitter.com/flyin1501)  
 Mastodon: [@flyingfeather1501@pawoo.net](https://pawoo.net/@flyingfeather1501)  
 Reddit: [/u/flyin1501](https://www.reddit.com/user/flyin1501)  
