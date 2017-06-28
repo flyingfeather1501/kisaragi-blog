@@ -2,7 +2,7 @@
 date = 2017-06-28T22:50:05+08:00
 title = "レディーレ Cover"
 draft = false
-thumbnail = "images/redire-thumb.png"
+thumbnail = "/images/redire-thumb.png"
 tags = [ "Cover" ]
 +++
 
