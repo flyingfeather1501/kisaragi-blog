@@ -11,6 +11,9 @@ disqusShortname = "kisaragi-hiu-blog"
   fontfamily = "Overpass,'Noto Sans CJK','Noto Sans',sans-serif" # Optional, Override body font family.
   logofontfamily = "'Noto Serif','Noto Serif CJK', serif" # Optional, Override logo font.
 
+[permalinks]
+  blog = "/:year/:month/:title/"
+
 [taxonomies]
   tag = "tags"
 
