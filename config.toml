@@ -11,5 +11,8 @@ disqusShortname = "kisaragi-hiu-blog"
   fontfamily = "Overpass,'Noto Sans CJK','Noto Sans',sans-serif" # Optional, Override body font family.
   logofontfamily = "'Noto Serif','Noto Serif CJK', serif" # Optional, Override logo font.
 
+[taxonomies]
+  tag = "tags"
+
 [outputs]
   page = [ "HTML", "AMP" ] # enable AMP
