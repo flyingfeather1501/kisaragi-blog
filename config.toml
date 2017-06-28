@@ -6,7 +6,7 @@ theme = "hugo_theme_robust"
 disqusShortname = "kisaragi-hiu-blog"
 
 [params]
-  #dateformat = "2001/01/01"
+  dateformat = "Jan 2, 2006"
   googlefonts = "https://fonts.googleapis.com/css?family=Lobster|Lato:400,700"
   fontfamily = "Overpass,'Noto Sans CJK','Noto Sans',sans-serif" # Optional, Override body font family.
   logofontfamily = "'Noto Serif','Noto Serif CJK', serif" # Optional, Override logo font.
