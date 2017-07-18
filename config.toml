@@ -1,21 +1,35 @@
-title = "如月 飛羽"
 baseURL = "https://flyingfeather1501.github.io"
 languageCode = "zh-tw"
+title = "如月.飛羽"
 config = "config.toml"
-theme = "hugo_theme_robust"
-disqusShortname = "kisaragi-hiu-blog"
+theme = "hugo-phlat-theme"
 
 [params]
-  dateformat = "Jan 2, 2006"
-  googlefonts = "https://fonts.googleapis.com/css?family=Lobster|Lato:400,700"
-  fontfamily = "Overpass,'Noto Sans CJK','Noto Sans',sans-serif" # Optional, Override body font family.
-  logofontfamily = "'Noto Serif','Noto Serif CJK', serif" # Optional, Override logo font.
+  keywords = ["default", "keywords", "if", "no", "front", "matter"]
+  description = "A description that will appear as a default if front matter does not exist"
+  disqus = "kisaragi-hiu-blog"
+  twitter = "https://www.twitter.com/flyin1501"
+  youtube = "https://www.youtube.com/channel/UCl_hsqcvdX0XdgBimRQ6R3A"
 
 [permalinks]
-  blog = "/:year/:month/:title/"
+  post = "/:year/:month/:slug/"
+  page = "/:slug/"
 
 [taxonomies]
   tag = "tags"
+  category = "categories"
 
-[outputs]
-  page = [ "HTML", "AMP" ] # enable AMP
+[[menu.header]]
+  name = "Home"
+  weight = 1
+  url = "/"
+
+[[menu.header]]
+  name = "Links"
+  weight = 2
+  url = "/links/"
+
+[[menu.header]]
+  name = "About"
+  weight = 3
+  url = "/about/"
