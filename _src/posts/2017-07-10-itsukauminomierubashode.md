@@ -9,6 +9,6 @@ Kdenlive 做打包專案時沒注意到.blend不會打包，結果歌詞圖片�
 
 歌聲嘛... 還是蠻糟的。多練習之類的吧。
 
-{{< youtube id="ZVCGLr8YQg0" autoplay="true" >}}
+<iframe id="ytplayer" type="text/html" width="640" height="360" src="http://www.youtube.com/embed/ZVCGLr8YQg0?autoplay=0&origin=https://flyingfeather1501.github.com" frameborder="0"/>
 
 開頭的淡入應該等聲音出現再開始的...
