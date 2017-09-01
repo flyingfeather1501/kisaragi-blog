@@ -1,9 +1,6 @@
-+++
-title = "新網站"
-draft = false
-date = "2017-03-19T05:00:00+08:00"
-thumbnail = "/images/default.png"
-+++
+    Title: "新網站"
+    Date: 2017-03-19T05:00:00
+    Author: 如月飛羽
 
 想要有個簡單的檔案記錄所有連結  
 →放在Github Pages好了  

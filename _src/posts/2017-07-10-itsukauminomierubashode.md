@@ -1,11 +1,6 @@
-+++
-date = 2017-07-10T15:01:45+08:00
-title = "いつか海の見える街で Cover + PV"
-draft = false
-thumbnail = "/images/umimachi-thumb.png"
-tags = [ "Cover" ]
-categories = []
-+++
+    Date: 2017-07-10T15:01:45
+    Title: いつか海の見える街で Cover + PV
+    Tags: Cover
 
 試著唱了いつか海の見える街で，然後弄了個簡單的歌詞PV。  
 背景是畢旅時坐電車在車廂尾端錄的，剛好我們班在最後一車。  
