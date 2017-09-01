@@ -1,6 +1,8 @@
-public/
-_site
-.sass-cache
-.jekyll-metadata
-.directory
-*.swp
+/.frog/
+/feeds/
+/20*/
+/index*.html
+/About.html
+/sitemap.txt
+/posts/
+/tags/
