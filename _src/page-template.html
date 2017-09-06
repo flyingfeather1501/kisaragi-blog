@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
   <head>
     @;{ The at-exp reader for a template treats this as a comment.
         Also, notice the use template variables like @title,
         @description etc. }
     <meta charset="utf-8">
+    <!--Font Awesome-->
+    <script src="https://use.fontawesome.com/f9f3cd1f14.js"></script>
     <title>@|title|</title>
     <meta name="description" content="@|description|">
     <meta name="author"      content="@|author|">
@@ -16,7 +18,7 @@
     @(when rel-prev @list{<link rel="prev" href="@|rel-prev|">})
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="@|uri-prefix|/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="@|uri-prefix|/css/pygments.css">
+    <link rel="stylesheet" type="text/css" href="@|uri-prefix|/css/pygments-monokai.css">
     <link rel="stylesheet" type="text/css" href="@|uri-prefix|/css/scribble.css">
     <link rel="stylesheet" type="text/css" href="@|uri-prefix|/css/custom.css">
     <!-- Feeds -->
@@ -41,7 +43,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="@|uri-prefix|/index.html" class="navbar-brand">My Blog Brand</a>
+          <a href="@|uri-prefix|/index.html" class="navbar-brand">如月飛羽</a>
         </div>
         <div class="collapse navbar-collapse our-nav-collapse"
              role="navigation">
@@ -56,15 +58,16 @@
                 </li> })
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                Tags <b class="caret"></b></a>
+                標籤 <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="@|uri-prefix|/index.html">All Posts</a></li>
+                <li><a href="@|uri-prefix|/index.html">所有文章</a></li>
                 @|tags-list-items|
               </ul>
             </li>
-            @ni[(string-append uri-prefix "/About.html") "About"]
-            <li><a href="@|atom-feed-uri|">Atom</a></li>
-            <li><a href="@|rss-feed-uri|">RSS</a></li>
+            @ni[(string-append uri-prefix "/About.html") "關於"]
+            @ni[(string-append uri-prefix "/Links.html") "連結"]
+            <li><a href="@|atom-feed-uri|"><span class="fa fa-rss"></span></a></li>
+            @;<li><a href="@|rss-feed-uri|">RSS</a></li>
           </ul>
         </div>
       </div>
@@ -95,7 +98,7 @@
       </div>
       <footer>
         <hr />
-        <p>@twitter-follow-button["racketlang" "Follow RacketLang"]</p>
+        <p>@twitter-follow-button["flyin1501" "@flyin1501"]</p>
         <p>Site generated
         by <a href="https://github.com/greghendershott/frog">Frog</a>,
         the <strong>fr</strong>ozen bl<strong>og</strong> tool.</p>

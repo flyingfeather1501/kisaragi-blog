@@ -1,14 +1,16 @@
 <article>
   <header>
     <h1>@|title|</h1>
-    <p class='date-and-tags'>@|date| :: @|tags|</p>
-    <p class='authors'>By: @|authors|</p>
+    <p class='date'>@|date|</p>
+    <!--p class='date-and-tags'>@|date| :: @|tags|</p-->
+    <!--p class='authors'>筆 @|authors|</p-->
   </header>
   @|content|
+  <p class='tags'>@|tags|</p>
   <footer>
     @twitter-share-button[full-uri]
     @google-plus-share-button[full-uri]
-    @disqus-comments["shortname"]
+    @disqus-comments["kisaragi-hiu-blog"]
     @older/newer-links[older-uri older-title newer-uri newer-title]
   </footer>
 </article>

@@ -5,7 +5,7 @@
 (define/contract (init)
   (-> any)
   (current-scheme/host "https://flyingfeather1501.github.io")
-  (current-title "My Blog")
+  (current-title "Kisaragi Hiu")
   (current-author "如月飛羽"))
 
 ;; Called once per post and non-post page, on the contents.

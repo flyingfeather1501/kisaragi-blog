@@ -11,19 +11,19 @@
    As you read the rest of the file, remember to double-check here to
    see if any font is set. */
 
-/* Monospace: */
+/* Monospace: Fira Code*/
 .maincolumn, .refpara, .refelem, .tocset, .stt, .hspace, .refparaleft, .refelemleft {
-  font-family: monospace;
+  font-family: 'Fira Code', monospace;
 }
 
-/* Serif: */
-.main, .refcontent, .tocview, .tocsub, .sroman, i {
-  font-family: serif;
+/* Serif: Source Serif & Honoka Mincho*/
+.main, .refcontent, .tocview, .tocsub, .sroman, i, h2 {
+  font-family: 'Noto Serif', 'Noto Serif CJK TC', 'Droid Serif', 'Microsoft Jhenghei', serif;
 }
 
-/* Sans-serif: */
+/* Sans-serif: Source Sans & Noto CJK*/
 .version, .versionNoNav, .ssansserif {
-  font-family: sans-serif;
+  font-family: 'Source Sans Pro', 'Noto Sans', 'Noto Sans CJK TC', 'Droid Sans', sans-serif;
 }
 .ssansserif {
   font-size: 80%;
@@ -467,6 +467,7 @@ ol ol ol ol { list-style-type: upper-alpha; }
   content: "by ";
 }
 .author {
+  font-style: italic;
   display: inline;
   white-space: nowrap;
 }

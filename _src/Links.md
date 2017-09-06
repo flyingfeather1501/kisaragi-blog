@@ -1,11 +1,4 @@
-+++
-date = 2000-06-28T23:50:38+08:00
-title = "Links"
-draft = false
-thumbnail = "/images/default.png"
-tags = []
-categories = []
-+++
+# Links
 
 Youtube: [如月.飛羽](https://www.youtube.com/channel/UCl_hsqcvdX0XdgBimRQ6R3A)  
 niconico: [如月.飛羽](http://www.nicovideo.jp/user/38995186)  
