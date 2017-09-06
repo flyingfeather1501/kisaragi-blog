@@ -2,7 +2,7 @@
 /feeds/
 /20*/
 /index*.html
-/About.html
+/*.html
 /sitemap.txt
 /posts/
 /tags/
