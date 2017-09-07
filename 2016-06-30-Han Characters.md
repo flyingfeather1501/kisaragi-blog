@@ -1,3 +1,7 @@
+    Title: Han Characters
+    Date: 2016-06-30T00:00:00
+    Tags: DRAFT
+
 If you're learning a language using Han characters, and you haven't known Han characters already, start with just the phonetic alphabets first. If you know them already... maybe starting with just phonetic alphabets would also be a good idea, but the difference won't be that significent.
 
 So, say if you're starting to learn Mandarin. You first learn the phonetic alphabet of choice (I'd advice Bopomofo since it's, I think, more optimized for Mandarin, but pinyin may feel more familiar), then just start learning it without thinking about Han characters. 
