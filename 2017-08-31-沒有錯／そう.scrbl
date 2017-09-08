@@ -1,3 +1,9 @@
+#lang scribble/manual
+
+Title: 沒有錯
+Date: 2017-08-31T00:00:00
+Tags: 短詩
+
 沒有錯，那是
 一年前
 

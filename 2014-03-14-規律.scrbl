@@ -1,6 +1,8 @@
-    Title: 規律
-    Tags: 短詩
-    Date: 2014-03-14T00:00:00
+#lang scribble/manual
+
+Title: 規律
+Tags: 短詩
+Date: 2014-03-14T00:00:00
 
 今天星期幾？今天是幾號？
 今年又是幾年呢？

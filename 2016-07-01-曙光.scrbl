@@ -1,6 +1,8 @@
-    Title: 曙光
-    Date: 2016-07-01T00:00:00
-    Tags: 短詩
+#lang scribble/manual
+
+Title: 曙光
+Date: 2016-07-01T00:00:00
+Tags: 短詩
 
 陰日中，曙光乍現
 而又隨即消失

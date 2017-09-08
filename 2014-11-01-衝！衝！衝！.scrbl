@@ -1,6 +1,8 @@
-    Title: 衝！衝！衝！
-    Date: 2014-11-01T00:00:00
-    Tags: 短詩
+#lang scribble/manual
+
+Title: 衝！衝！衝！
+Date: 2014-11-01T00:00:00
+Tags: 短詩
 
 衝！衝！衝！　踩著人頭向上衝！
 考！考！考！　考到好人生！

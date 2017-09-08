@@ -1,6 +1,8 @@
-    Title: 拖延了三年的廢墟
-    Tags: 短詩
-    Date: 2017-01-19T00:00:00
+#lang scribble/manual
+
+Title: 拖延了三年的廢墟
+Tags: 短詩
+Date: 2017-01-19T00:00:00
 
 當分離來臨，崩壞將至，
 你僅是閉上了眼。

@@ -1,6 +1,8 @@
-    Title: 然後呢？
-    Date: 2016-05-05T00:00:00
-    Tags: 短詩
+#lang scribble/manual
+
+Title: 然後呢？
+Date: 2016-05-05T00:00:00
+Tags: 短詩
 
 脫軌了。
 一切的意義，漸漸消失了。

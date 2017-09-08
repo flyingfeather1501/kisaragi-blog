@@ -1,6 +1,8 @@
-    Title: Minimum Basic Income vs. Basic Human Rights, the Similarity
-    Tags: DRAFT
-    Date: 2016-05-20T00:00:00
+#lang scribble/manual
+
+Title: Minimum Basic Income vs. Basic Human Rights, the Similarity
+Tags: DRAFT
+Date: 2016-05-20T00:00:00
 
 Power and Money are similar.
 
