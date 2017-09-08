@@ -6,3 +6,12 @@
 /sitemap.txt
 /posts/
 /tags/
+
+Thumbs.db
+ehthumbs.db
+
+Desktop.ini
+*.lnk
+.DS_Store
+.AppleDouble
+.LSOverride
