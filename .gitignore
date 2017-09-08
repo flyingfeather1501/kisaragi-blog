@@ -1,14 +1,4 @@
 /.frog/
-/feeds/
-/20*/
-/index*.html
-/*.html
-/sitemap.txt
-/posts/
-/tags/
-
-# Tell github pages to not use jekyll
-.nojekyll
 
 Thumbs.db
 ehthumbs.db
