@@ -1,14 +1,16 @@
 <article>
   <header>
-    <h2><a href='@|uri-path|'>@|title|</a></h2>
-    <p class='date'>@|date|</p>
-    <!--p class='date-and-tags'>@|date| :: @|tags|</p-->
+    <h2>
+      <a href='@|uri-path|'>@|title|</a>
+    </h2>
+    <p class='date-and-tags'>@|date|, <i>@|tags|</i></p>
     <!--p class='authors'>筆 @|authors|</p-->
   </header>
   @|content-only|
-  <p class='tags'>@|tags|</p>
   @(when more?
-    @list{<footer>
-            <a href='@|uri-path|'>&hellip; more &hellip;</a>
-          </footer>})
+    @list{
+      <footer>
+        <a href='@|uri-path|'>&hellip; more &hellip;</a>
+      </footer>})
+  <hr>
 </article>

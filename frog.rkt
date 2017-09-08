@@ -5,6 +5,8 @@
 (define/contract (init)
   (-> any)
   (current-scheme/host "https://flyingfeather1501.github.io")
+  (current-editor "$EDITOR")
+  (current-editor-command "{editor} {filename}")
   (current-title "Kisaragi Hiu")
   (current-author "如月飛羽"))
 

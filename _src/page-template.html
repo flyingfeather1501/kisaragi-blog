@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
   <head>
-    @;{ The at-exp reader for a template treats this as a comment.
-        Also, notice the use template variables like @title,
-        @description etc. }
     <meta charset="utf-8">
     <!--Font Awesome-->
     <script src="https://use.fontawesome.com/f9f3cd1f14.js"></script>
@@ -27,7 +24,7 @@
     <link rel="alternate" type="application/rss+xml"
           href="@|rss-feed-uri|" title="RSS Feed">
     <!-- JS -->
-    @google-universal-analytics["UA-xxxxx"]
+    @;google-universal-analytics["UA-xxxxx"]
   </head>
   <body>
     <!-- A standard Twitter Bootstrap nav bar -->
@@ -78,7 +75,7 @@
             col-md-N classes should add up to 12.  For instance 3
             "col-md-4" divs, or 2 "col-md-6" divs. }
         <!-- Main column -->
-        <div id="content" class="col-md-12">
+        <div id="content" class="col-md-8">
           @;{ To put something only on the home page, check for
               @uri-path being "/index.html" }
           @(when (string-ci=? uri-path
@@ -94,6 +91,9 @@
             @list{<h1>Posts tagged <em>@|tag|</em></h1>})
           @;{ The main page contents are in @contents }
           @|contents|
+        </div>
+        <div id="sidebar" class="col-md-4">
+          <p>Hello!</p>
         </div>
       </div>
       <footer>
