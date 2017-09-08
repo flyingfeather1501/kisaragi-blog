@@ -8,6 +8,7 @@
   (current-editor "$EDITOR")
   (current-editor-command "{editor} {filename}")
   (current-title "Kisaragi Hiu")
+  (current-output-dir "./public")
   (current-author "如月飛羽"))
 
 ;; Called once per post and non-post page, on the contents.
