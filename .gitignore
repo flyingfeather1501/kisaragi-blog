@@ -7,6 +7,9 @@
 /posts/
 /tags/
 
+# Tell github pages to not use jekyll
+.nojekyll
+
 Thumbs.db
 ehthumbs.db
 
