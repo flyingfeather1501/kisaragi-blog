@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+ <title type="text">Kisaragi Hiu: Posts tagged 'Meta'</title>
+ <link rel="self" href="https://flyingfeather1501.github.io/feeds/Meta.atom.xml" />
+ <link href="https://flyingfeather1501.github.io/tags/Meta.html" />
+ <id>urn:https-flyingfeather1501-github-io:-tags-Meta-html</id>
+ <updated>2017-09-12T08:46:00Z</updated>
+ <entry>
+  <title type="text">在Android上用Frog</title>
+  <link rel="alternate" href="https://flyingfeather1501.github.io/2017/09/%E5%9C%A8android%E4%B8%8A%E7%94%A8frog.html?utm_source=Meta&amp;utm_medium=Atom" />
+  <id>urn:https-flyingfeather1501-github-io:-2017-09-E5-9C-A8android-E4-B8-8A-E7-94-A8frog-html</id>
+  <published>2017-09-12T08:46:00Z</published>
+  <updated>2017-09-12T08:46:00Z</updated>
+  <author>
+   <name>如月飛羽</name></author>
+  <content type="html">
+&lt;p&gt;Linux Deploy是個很不錯的Android app。&lt;/p&gt;
+
+&lt;p&gt;這個網站前幾天改成了用Frog建置，但是Termux裡沒有racket的套件。(如果我是用Jekyll還是Hugo之類的Termux裡面有需要的套件，但那些我還弄不懂)&lt;/p&gt;
+
+&lt;p&gt;用Linux Deploy我可以建構一個Debian Sid的(類似Container)的環境出來，啟用ssh，然後把/sdcard bind到那裡面，再裝好Racket和Frog，就可以在手機上建構這個網站了。&lt;/p&gt;
+
+&lt;p&gt;能在Termux直接有Racket的話會更好就是。現在啟動這個Container(?)的時候電池總是燒很快。&lt;/p&gt;</content></entry></feed>
