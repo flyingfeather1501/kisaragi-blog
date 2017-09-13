@@ -103,63 +103,38 @@
 
         <p>Making osu! skin elements with Blender is weird. I am putting multiple elements in the same file and adding a different camera for each of them, binding the cameras onto markers, and so I wondered if there&rsquo;s some way to render every marker and maybe name the output with the marker. After a bit of Googling, I saw an answer by <code>p2or</code> on StackExchange that fits my needs perfectly. (I added the first two comments.)</p>
 
-        <div class="brush: python">
-         <table class="sourcetable">
-          <tbody>
-           <tr>
-            <td class="linenos">
-             <div class="linenodiv">
-              <pre> 1
-         2
-         3
-         4
-         5
-         6
-         7
-         8
-         9
-        10
-        11
-        12
-        13
-        14
-        15
-        16
-        17
-        18
-        19
-        20</pre></div></td>
-            <td class="code">
-             <div class="source">
-              <pre><span></span><span class="c1"># by p2or on Blender StackExchange</span>
-        <span class="c1"># https://blender.stackexchange.com/questions/23121</span>
-        <span class="kn">import</span> <span class="nn">bpy</span>
-        <span class="kn">import</span> <span class="nn">os</span>
+        <pre><code># by p2or on Blender StackExchange
+        # https://blender.stackexchange.com/questions/23121
+        import bpy
+        import os
 
-        <span class="c1"># get the scene</span>
-        <span class="n">scn</span> <span class="o">=</span> <span class="n">bpy</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">scene</span>
+        # get the scene
+        scn = bpy.context.scene
 
-        <span class="c1"># get the output path</span>
-        <span class="n">output_path</span> <span class="o">=</span> <span class="n">scn</span><span class="o">.</span><span class="n">render</span><span class="o">.</span><span class="n">filepath</span>
+        # get the output path
+        output_path = scn.render.filepath
 
-        <span class="c1"># iterate through markers and render</span>
-        <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">scn</span><span class="o">.</span><span class="n">timeline_markers</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-            <span class="n">frame</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">frame</span>
-            <span class="n">marker_name</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">name</span>
-            <span class="n">scn</span><span class="o">.</span><span class="n">frame_set</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span>
-            <span class="n">scn</span><span class="o">.</span><span class="n">render</span><span class="o">.</span><span class="n">filepath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output_path</span><span class="p">,</span> <span class="n">marker_name</span> <span class="o">+</span> <span class="s2">".jpg"</span><span class="p">)</span>
-            <span class="n">bpy</span><span class="o">.</span><span class="n">ops</span><span class="o">.</span><span class="n">render</span><span class="o">.</span><span class="n">render</span><span class="p">(</span> <span class="n">write_still</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+        # iterate through markers and render
+        for k, m in scn.timeline_markers.items():
+            frame = m.frame
+            marker_name = m.name
+            scn.frame_set(frame)
+            scn.render.filepath = os.path.join(output_path, marker_name + ".jpg")
+            bpy.ops.render.render( write_still=True )
 
-        <span class="n">bpy</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">scene</span><span class="o">.</span><span class="n">render</span><span class="o">.</span><span class="n">filepath</span> <span class="o">=</span> <span class="n">output_path</span>
-        </pre></div>
-        </td></tr></tbody></table>
-        </div>
+        bpy.context.scene.render.filepath = output_path</code></pre>
 
         <p>With that, I was able to hack together a shell script to render all blend files. Blender also only allows one resolution per scene, so I had to write some post processing functions that resize some images for me, as well as a sort of interface to them through the file names.</p>
 
         <p>Later in June, I decided to also cover the hitcircles and other elements, and eventually removed all assets not made by me. I also purged all of those out of the git repository; in hindsight, I actually regret that a bit. While refactoring that, I also wanted to do something about the ugly shell script, and I started looking around for different languages.</p>
 
-        <p>I thought about <a href="http://xon.sh/">Xonsh</a>, Python, <a href="https://scsh.net/"><code>scsh</code></a>, the <a href="https://github.com/michaelmacinnis/oh"><code>oh</code></a> shell, and some others, but: - <code>oh</code>: I don&rsquo;t really understand. At least not yet. - Python: I don&rsquo;t like doing shell script-y stuff in Python currently. Previously I had ported my <code>randomwallpaper</code> script to Python, and it didn&rsquo;t feel better than Bash. This is purely my issue. - Xonsh: Looks very interesting, but I got stuck trying to figure out how I should parse command line arguments. - <code>scsh</code>: A full language + some shell-isms, sort of like Xonsh. Project feels kind of inactive though.</p>
+        <p>I thought about <a href="http://xon.sh/">Xonsh</a>, Python, <a href="https://scsh.net/"><code>scsh</code></a>, the <a href="https://github.com/michaelmacinnis/oh"><code>oh</code></a> shell, and some others, but:</p>
+
+        <ul>
+         <li><code>oh</code>: I don&rsquo;t really understand. At least not yet.</li>
+         <li>Python: I don&rsquo;t like doing shell script-y stuff in Python currently. Previously I had ported my <code>randomwallpaper</code> script to Python, and it didn&rsquo;t feel better than Bash. This is purely my issue.</li>
+         <li>Xonsh: Looks very interesting, but I got stuck trying to figure out how I should parse command line arguments.</li>
+         <li><code>scsh</code>: A full language + some shell-isms, sort of like Xonsh. Project feels kind of inactive though.</li></ul>
 
         <p>So I just gave up and stayed with Bash, and tried to improve the script further; but the &ldquo;Scheme shell&rdquo; idea seemed really interesting to me, so I decided to Google for &ldquo;Scheme shell&rdquo; and see what I&rsquo;d get. Racket showed up in the results, and I met Racket for the first time. It actually looks great!</p>
 

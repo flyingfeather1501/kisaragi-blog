@@ -12,7 +12,7 @@ Then I stumbled across [a font made for the I script in Re:0](https://www.youtub
 Making osu! skin elements with Blender is weird. I am putting multiple elements in the same file and adding a different camera for each of them, binding the cameras onto markers, and so I wondered if there's some way to render every marker and maybe name the output with the marker.
 After a bit of Googling, I saw an answer by `p2or` on StackExchange that fits my needs perfectly. (I added the first two comments.)
 
-```python
+```
 # by p2or on Blender StackExchange
 # https://blender.stackexchange.com/questions/23121
 import bpy
@@ -40,6 +40,7 @@ With that, I was able to hack together a shell script to render all blend files.
 Later in June, I decided to also cover the hitcircles and other elements, and eventually removed all assets not made by me. I also purged all of those out of the git repository; in hindsight, I actually regret that a bit. While refactoring that, I also wanted to do something about the ugly shell script, and I started looking around for different languages.
 
 I thought about [Xonsh](http://xon.sh/), Python, [`scsh`](https://scsh.net/), the [`oh`](https://github.com/michaelmacinnis/oh) shell, and some others, but:
+
 - `oh`: I don't really understand. At least not yet.
 - Python: I don't like doing shell script-y stuff in Python currently. Previously I had ported my `randomwallpaper` script to Python, and it didn't feel better than Bash. This is purely my issue.
 - Xonsh: Looks very interesting, but I got stuck trying to figure out how I should parse command line arguments.
