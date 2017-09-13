@@ -16,7 +16,6 @@
   ;; Here we pass the xexprs through a series of functions.
   (~> xs
       (syntax-highlight #:python-executable "python"
-                        #:line-numbers? #t
                         #:css-class "source")
       (auto-embed-tweets #:parents? #t)
       (add-racket-doc-links #:code? #t #:prose? #f)))

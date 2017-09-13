@@ -32,6 +32,18 @@
 
 /* ---------------------------------------- */
 
+pre {
+  font-size: 95%;
+  line-height: 140%;
+  white-space: pre;
+}       
+
+code {
+  font-size: 95%;
+  line-height: 140%;
+  white-space: pre;
+}
+
 p, .SIntrapara {
   display: block;
   margin: 1em 0;
@@ -351,7 +363,7 @@ table td {
   white-space: nowrap;
 }
 
-pre { margin-left: 2em; }
+/* pre { margin-left: 2em; } */
 blockquote { margin-left: 2em; }
 
 ol          { list-style-type: decimal; }
