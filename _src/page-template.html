@@ -73,34 +73,58 @@
     </header>
     <div class="container">
       <div class="row">
-        @;{ Remember that Twitter Bootstrap has a 12 cell model. The
-            col-md-N classes should add up to 12.  For instance 3
-            "col-md-4" divs, or 2 "col-md-6" divs. }
-        <!-- Main column -->
-        <div id="content" class="col-md-7">
-          @;{ To put something only on the home page, check for
-              @uri-path being "/index.html" }
-          @(when (string-ci=? uri-path
-                              (string-append uri-prefix
-                                             "/index.html"))
+        @(cond
+          [(or (string-prefix? uri-path (string-append uri-prefix "/index")) tag)
             @list{
-              <h1>如月.飛羽</h1>
-              <p>寫作、筆記、之類的。</p>
-              <hr> })
-          @;{ Index pages for posts have @tag that's not #f }
-          @(when tag
-            @list{<h1>Posts tagged <em>@|tag|</em></h1>})
-          @;{ The main page contents are in @contents }
-          @|contents|
-        </div>
-        <div id="sidebar" class="col-md-5">
-          <a class="twitter-timeline"
-             data-dnt="true"
-             data-link-color="#836ac1"
-             href="https://twitter.com/flyin1501">Tweets by flyin1501</a>
-          <script async src="//platform.twitter.com/widgets.js" charset="utf-8">
-          </script>
-        </div>
+              <div id="content" class="col-md-8">
+                <h1>如月.飛羽</h1>
+                <p>寫作、筆記、之類的。</p>
+                <hr>
+                @(when tag
+                  @list{<h1>標籤: <em>@|tag|</em></h1><br>})
+                @|contents|
+              </div>
+              <div id="sidebar" class="col-md-4">
+                <a class="twitter-timeline"
+                   data-tweet-limit=7
+                   data-dnt="true"
+                   data-link-color="#836ac1"
+                   href="https://twitter.com/flyin1501">Tweets by flyin1501</a>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div> }]
+          [else
+            @list{
+              <div id="content" class="col-md-12">
+                @|contents|
+              </div> }])
+@;        @;{ Remember that Twitter Bootstrap has a 12 cell model. The
+@;            col-md-N classes should add up to 12.  For instance 3
+@;            "col-md-4" divs, or 2 "col-md-6" divs. }
+@;        <!-- Main column -->
+@;        <div id="content" class="col-md-8">
+@;          @;{ To put something only on the home page, check for
+@;              @uri-path being "/index.html" }
+@;          @(when (string-ci=? uri-path (string-append uri-prefix "/index.html"))
+@;            @list{
+@;              <h1>如月.飛羽</h1>
+@;              <p>寫作、筆記、之類的。</p>
+@;              <hr> })
+@;          @;{ Index pages for posts have @tag that's not #f }
+@;          @(when tag
+@;            @list{<h1>標籤: <em>@|tag|</em></h1>})
+@;          @;{ The main page contents are in @contents }
+@;          @|contents|
+@;        </div>
+@;        <div id="sidebar" class="col-md-4">
+@;          @(when (string-ci=? uri-path (string-append uri-prefix "/index.html"))
+@;            @list{
+@;              <a class="twitter-timeline"
+@;                 data-tweet-limit=7
+@;                 data-dnt="true"
+@;                 data-link-color="#836ac1"
+@;                 href="https://twitter.com/flyin1501">Tweets by flyin1501</a>
+@;              <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> })
+@;        </div>
       </div>
       <footer>
         <hr />
@@ -109,7 +133,8 @@
         by <a href="https://github.com/greghendershott/frog">Frog</a>,
         the <strong>fr</strong>ozen bl<strong>og</strong> tool.</p>
         <p>Using <a href="http://twitter.github.com/bootstrap/index.html">Bootstrap</a>.</p>
-        <p><em>Your legal notice here</em>.</p>
+        <p>© 2017 Kisaragi Hiu (flyingfeather1501 <em>at</em> gmail.com).</p>
+        <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
       </footer>
     </div>
     <!-- </body> JS -->
