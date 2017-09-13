@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<rss version="2.0">
+ <channel>
+  <title>Kisaragi Hiu: Posts tagged 'English'</title>
+  <description>Kisaragi Hiu: Posts tagged 'English'</description>
+  <link>https://flyingfeather1501.github.io/tags/English.html</link>
+  <lastBuildDate>Wed, 13 Sep 2017 09:58:08 UT</lastBuildDate>
+  <pubDate>Wed, 13 Sep 2017 09:58:08 UT</pubDate>
+  <ttl>1800</ttl>
+  <item>
+   <title>Discovering Racket through making a osu! skin</title>
+   <link>https://flyingfeather1501.github.io/2017/09/discovering-racket-through-making-a-osu-skin.html?utm_source=English&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:https-flyingfeather1501-github-io:-2017-09-discovering-racket-through-making-a-osu-skin-html</guid>
+   <pubDate>Wed, 13 Sep 2017 09:58:08 UT</pubDate>
+   <author>如月飛羽</author>
+   <description>
+&lt;p&gt;In around March this year, I started trying to make my own osu! skin, or at least mix a skin for my own use. I started with the &lt;a href="https://osu.ppy.sh/forum/t/454986"&gt;Emilia (Re:0) skin by Beatstatic&lt;/a&gt;, with a git repo to track my changes, and copied the hitcircles from &lt;a href="https://osu.ppy.sh/forum/t/300001"&gt;Clear Skin Ultra 2.4&lt;/a&gt; (I like its hitcircle design a lot).&lt;/p&gt;
+
+&lt;p&gt;Then I stumbled across &lt;a href="https://www.youtube.com/watch?v=Yih6pz09Z1A"&gt;a font made for the I script in Re:0&lt;/a&gt; in April, and started wanting to learn the script for the sake of it. As part of the practice, I decided why not make osu!&amp;rsquo;s elements in the Re:0 writing system? So I made a new folder in my mix skin, then opened Blender to make the elements, because that&amp;rsquo;s the only tool I was comfortable with using. (I&amp;rsquo;ve since learned to use Inkscape more.)&lt;/p&gt;&lt;a href="https://flyingfeather1501.github.io/2017/09/discovering-racket-through-making-a-osu-skin.html?utm_source=English&amp;amp;utm_medium=RSS"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</description></item></channel></rss>

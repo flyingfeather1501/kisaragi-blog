@@ -4,7 +4,19 @@
  <link rel="self" href="https://flyingfeather1501.github.io/feeds/all.atom.xml" />
  <link href="https://flyingfeather1501.github.io/index.html" />
  <id>urn:https-flyingfeather1501-github-io:-index-html</id>
- <updated>2017-09-12T08:46:00Z</updated>
+ <updated>2017-09-13T09:58:08Z</updated>
+ <entry>
+  <title type="text">Discovering Racket through making a osu! skin</title>
+  <link rel="alternate" href="https://flyingfeather1501.github.io/2017/09/discovering-racket-through-making-a-osu-skin.html?utm_source=all&amp;utm_medium=Atom" />
+  <id>urn:https-flyingfeather1501-github-io:-2017-09-discovering-racket-through-making-a-osu-skin-html</id>
+  <published>2017-09-13T09:58:08Z</published>
+  <updated>2017-09-13T09:58:08Z</updated>
+  <author>
+   <name>如月飛羽</name></author>
+  <content type="html">
+&lt;p&gt;In around March this year, I started trying to make my own osu! skin, or at least mix a skin for my own use. I started with the &lt;a href="https://osu.ppy.sh/forum/t/454986"&gt;Emilia (Re:0) skin by Beatstatic&lt;/a&gt;, with a git repo to track my changes, and copied the hitcircles from &lt;a href="https://osu.ppy.sh/forum/t/300001"&gt;Clear Skin Ultra 2.4&lt;/a&gt; (I like its hitcircle design a lot).&lt;/p&gt;
+
+&lt;p&gt;Then I stumbled across &lt;a href="https://www.youtube.com/watch?v=Yih6pz09Z1A"&gt;a font made for the I script in Re:0&lt;/a&gt; in April, and started wanting to learn the script for the sake of it. As part of the practice, I decided why not make osu!&amp;rsquo;s elements in the Re:0 writing system? So I made a new folder in my mix skin, then opened Blender to make the elements, because that&amp;rsquo;s the only tool I was comfortable with using. (I&amp;rsquo;ve since learned to use Inkscape more.)&lt;/p&gt;&lt;a href="https://flyingfeather1501.github.io/2017/09/discovering-racket-through-making-a-osu-skin.html?utm_source=all&amp;amp;utm_medium=Atom"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</content></entry>
  <entry>
   <title type="text">在Android上用Frog</title>
   <link rel="alternate" href="https://flyingfeather1501.github.io/2017/09/%E5%9C%A8android%E4%B8%8A%E7%94%A8frog.html?utm_source=all&amp;utm_medium=Atom" />
